@@ -21,6 +21,11 @@
 		EA95B20D18127014007C7E88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95B1EF18127014007C7E88 /* UIKit.framework */; };
 		EA95B21518127015007C7E88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA95B21318127015007C7E88 /* InfoPlist.strings */; };
 		EA95B21718127015007C7E88 /* GestionDeFicherosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA95B21618127015007C7E88 /* GestionDeFicherosTests.m */; };
+		EA95B222181270CF007C7E88 /* plantilla.txt in Resources */ = {isa = PBXBuildFile; fileRef = EA95B221181270CF007C7E88 /* plantilla.txt */; };
+		EA95B2241812933D007C7E88 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95B2231812933D007C7E88 /* AssetsLibrary.framework */; };
+		EA95B22618129347007C7E88 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95B22518129347007C7E88 /* AVFoundation.framework */; };
+		EA95B22818129350007C7E88 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95B22718129350007C7E88 /* CoreMedia.framework */; };
+		EA95B22A1812988D007C7E88 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA95B2291812988D007C7E88 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		EA95B21218127015007C7E88 /* GestionDeFicherosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GestionDeFicherosTests-Info.plist"; sourceTree = "<group>"; };
 		EA95B21418127015007C7E88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA95B21618127015007C7E88 /* GestionDeFicherosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestionDeFicherosTests.m; sourceTree = "<group>"; };
+		EA95B221181270CF007C7E88 /* plantilla.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plantilla.txt; sourceTree = "<group>"; };
+		EA95B2231812933D007C7E88 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EA95B22518129347007C7E88 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA95B22718129350007C7E88 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EA95B2291812988D007C7E88 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA95B22A1812988D007C7E88 /* MobileCoreServices.framework in Frameworks */,
+				EA95B22818129350007C7E88 /* CoreMedia.framework in Frameworks */,
+				EA95B22618129347007C7E88 /* AVFoundation.framework in Frameworks */,
+				EA95B2241812933D007C7E88 /* AssetsLibrary.framework in Frameworks */,
 				EA95B1EE18127014007C7E88 /* CoreGraphics.framework in Frameworks */,
 				EA95B1F018127014007C7E88 /* UIKit.framework in Frameworks */,
 				EA95B1EC18127014007C7E88 /* Foundation.framework in Frameworks */,
@@ -101,6 +115,10 @@
 		EA95B1EA18127014007C7E88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA95B2291812988D007C7E88 /* MobileCoreServices.framework */,
+				EA95B22718129350007C7E88 /* CoreMedia.framework */,
+				EA95B22518129347007C7E88 /* AVFoundation.framework */,
+				EA95B2231812933D007C7E88 /* AssetsLibrary.framework */,
 				EA95B1EB18127014007C7E88 /* Foundation.framework */,
 				EA95B1ED18127014007C7E88 /* CoreGraphics.framework */,
 				EA95B1EF18127014007C7E88 /* UIKit.framework */,
@@ -126,6 +144,7 @@
 		EA95B1F218127014007C7E88 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EA95B2201812707C007C7E88 /* Templates */,
 				EA95B1F318127014007C7E88 /* GestionDeFicheros-Info.plist */,
 				EA95B1F418127014007C7E88 /* InfoPlist.strings */,
 				EA95B1F718127014007C7E88 /* main.m */,
@@ -150,6 +169,14 @@
 				EA95B21318127015007C7E88 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA95B2201812707C007C7E88 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				EA95B221181270CF007C7E88 /* plantilla.txt */,
+			);
+			name = Templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA95B222181270CF007C7E88 /* plantilla.txt in Resources */,
 				EA95B20418127014007C7E88 /* Images.xcassets in Resources */,
 				EA95B1F618127014007C7E88 /* InfoPlist.strings in Resources */,
 				EA95B1FF18127014007C7E88 /* Main.storyboard in Resources */,
