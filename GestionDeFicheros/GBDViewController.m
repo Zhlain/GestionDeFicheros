@@ -106,7 +106,8 @@
         
         
         NSString *path = [NSString stringWithFormat:@"%@/%.f%@",
-                          [fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSAllDomainsMask], timestamp, @"nombre_imagen.jpg"];
+                          [[[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSAllDomainsMask] objectAtIndex:0] path], timestamp, @"nombre_imagen.jpg"];
+        
         [fileManager createFileAtPath:path
                              contents:UIImageJPEGRepresentation(pickedImg, 1.0)
                            attributes:nil];
